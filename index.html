@@ -1,0 +1,24 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+      <title>Gathering Input</title>
+      <meta charset="utf-8" />
+      <script lang="javascript">
+        function getName() {
+          var fullName;
+          fullName = document.getElementById("first").value + " " + document.getElementById("last").value;
+          document.getElementById("message").innerHTML = fullName;
+        }
+      </script>
+    </head>
+    <body>
+      <form>
+         First Name: <input type="text" id="first"><br>
+         Last Name:  <input type="text" id="last"><br>
+        <button type="button" id="doneButton" onclick="getName();">Done</button>
+      </form>
+      <p id="message">
+        &nbsp;
+      </p>
+    </body>
+  </html>
